@@ -6,7 +6,7 @@
 #include <dt-bindings/zmk/rgb.h>
 
 #include "../zmk-nodefree-config/helper.h"
-#include "../zmk-nodefree-config/keypos_def/keypos_36keys.h"
+#include "../zmk-nodefree-config/keypos_def/keypos_glv80.h"
 
 /* Automatically generated layer name #define */
 #define LAYER_Base 0
