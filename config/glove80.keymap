@@ -10,7 +10,7 @@
 
 /* Automatically generated layer name #define */
 #define LAYER_Base 0
-#define LAYER_Function 1
+#define LAYER_Func 1
 #define LAYER_Magic 2
 
 #define XXX &none
@@ -127,7 +127,7 @@ GLV80_LAYER(base,
 /* ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤   ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤ */
     &kp LSHFT       &kp Z           &kp X           &kp C           &kp V           &kp B            ,   &kp N           &kp M           &kp COMMA       &kp DOT         &kp FSLH        &kp RSHFT
 /* ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┼───────────────╯   ╰───────────────┼───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤ */
-    &mo 1           &magic LAYER_Magic 0 XXX        &kp LEFT        &kp RIGHT                        ,                   &kp DOWN        &kp UP          &kp LBKT        &kp RBKT        &mo 1
+    &mo LAYER_Func  &magic LAYER_Magic 0 XXX        &kp LEFT        &kp RIGHT                        ,                   &kp DOWN        &kp UP          &kp LBKT        &kp RBKT        &mo LAYER_Func
 /* ╰───────────────┴───────────────┴───────────────┴───────────────┴───────────────╯                                   ╰───────────────┴───────────────┴───────────────┴───────────────┴───────────────╯ */
                                                                                                      ,
 /*                                         ╭───────────────┬───────────────┬───────────────╮                   ╭───────────────┬───────────────┬───────────────╮                                         */
@@ -198,7 +198,7 @@ GLV80_LAYER(magic,
             >;
         };
 
-        layer_Function {
+        layer_Func {
             bindings = <
  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5                                                                  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
  &trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans   &trans
