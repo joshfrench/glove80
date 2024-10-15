@@ -38,10 +38,10 @@ ZMK_BEHAVIOR(hmr, hold_tap,
     hold-trigger-on-release;             // delay positional check until key-release
 )
 
-// tap: sticky shift | double tap: capsword
+// tap: sticky shift | double tap: capsword | triple tap: capslock
 ZMK_BEHAVIOR(ss_cw, tap_dance,
     tapping-term-ms = <200>;
-    bindings = <&sk RSHFT>, <&caps_word>;
+    bindings = <&sk RSHFT>, <&caps_word>, <&kp CAPS>;
 )
 
 &caps_word {
