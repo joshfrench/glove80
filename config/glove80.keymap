@@ -16,6 +16,8 @@
 #define XXX &none
 #define ___ &trans
 
+#define MO_TOG(layer) &mo_tog layer layer
+
 /* left-hand HRMs */
 ZMK_BEHAVIOR(hml, hold_tap,
     flavor = "balanced";
@@ -42,6 +44,12 @@ ZMK_BEHAVIOR(hmr, hold_tap,
 ZMK_BEHAVIOR(ss_cw, tap_dance,
     tapping-term-ms = <200>;
     bindings = <&sk RSHFT>, <&caps_word>, <&kp CAPS>;
+)
+
+ZMK_BEHAVIOR(mo_tog, hold_tap,
+    flavor = "hold-preferred";
+    tapping-term-ms = <200>;
+    bindings = <&mo>, <&tog>;
 )
 
 &caps_word {
