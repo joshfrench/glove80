@@ -54,12 +54,6 @@ ZMK_BEHAVIOR(mo_tog, hold_tap,
     bindings = <&mo>, <&tog>;
 )
 
-ZMK_BEHAVIOR(shcaps, hold_tap,
-    flavor = "hold-preferred";
-    tapping-term-ms = <200>;
-    bindings = <&kp LSHFT>, <&kp CAPS>;
-);
-
 &caps_word {
     continue-list = <UNDERSCORE BACKSPACE DELETE MINUS LSHIFT RSHIFT>;
 };
@@ -133,7 +127,7 @@ GLV80_LAYER(base,
 /* ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤   ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤ */
     &mt LCTRL ESC   &hml LCTRL A    &hml LALT S     &hml LGUI D     &hml LSHFT F    &kp G                &kp H           &hmr RSHFT J    &hmr RGUI K     &hmr RALT L     &hmr RCTRL SEMI &kp SQT
 /* ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤   ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤ */
-    &shcaps         &kp Z           &kp X           &kp C           &kp V           &kp B            ,   &kp N           &kp M           &kp COMMA       &kp DOT         &kp FSLH        &kp RSHFT
+    &mt LSHFT CAPS  &kp Z           &kp X           &kp C           &kp V           &kp B            ,   &kp N           &kp M           &kp COMMA       &kp DOT         &kp FSLH        &kp RSHFT
 /* ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┼───────────────╯   ╰───────────────┼───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤ */
     &mo LAYER_Func  &magic LAYER_Magic 0 XXX        &kp LEFT        &kp RIGHT                        ,                   &kp DOWN        &kp UP          &kp LBKT        &kp RBKT        &mo LAYER_Func
 /* ╰───────────────┴───────────────┴───────────────┴───────────────┴───────────────╯                                   ╰───────────────┴───────────────┴───────────────┴───────────────┴───────────────╯ */
